@@ -25,13 +25,13 @@ const onRequest = (request, response) => {
       mediaHandler.getBling(request, response);
       break;
     case '/bird.mp4':
-      mediaHandler.getBirds(request, response);
+      mediaHandler.getBird(request, response);
       break;
     default:
       htmlHandler.getIndex(request, response);
       break;
   }
-};
+
 
 http.createServer(onRequest).listen(port);
 
