@@ -56,8 +56,8 @@ const getParty = (request, response) => {
 
 const getBling = (request, response) => {
   const file = path.resolve(__dirname, '../client/bling.mp3');
-	console.log(`file=${file}`);
-	  
+  console.log(`file=${file}`);
+
   fs.stat(file, (err, stats) => {
     if (err) {
       if (err.code === 'ENOINT') {
@@ -163,5 +163,5 @@ const getBird = (request, response) => {
 module.exports = {
   getParty,
   getBling,
-  getBird
+  getBird,
 };

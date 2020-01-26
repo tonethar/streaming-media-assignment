@@ -25,5 +25,5 @@ const getPage3 = (request, response) => {
 module.exports = {
   getIndex,
   getPage2,
-  getPage3
+  getPage3,
 };
